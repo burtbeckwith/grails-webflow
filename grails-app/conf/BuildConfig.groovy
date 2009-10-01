@@ -6,7 +6,7 @@ grails.project.dependency.resolution = {
     log "warn" // log level of Ivy resolver, either 'error', 'warn', 'info', 'debug' or 'verbose'
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
-        compile 'org.grails:grails-webflow:1.2-SNAPSHOT',
+        compile 'org.grails:grails-webflow:1.2-M3',
  				'org.springframework.webflow:org.springframework.webflow:2.0.8.RELEASE',
  				'org.springframework.webflow:org.springframework.binding:2.0.8.RELEASE',
  				'org.springframework.webflow:org.springframework.js:2.0.8.RELEASE'
