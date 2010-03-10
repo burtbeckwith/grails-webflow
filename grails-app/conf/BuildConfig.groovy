@@ -9,7 +9,7 @@ grails.project.dependency.resolution = {
 	}
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
-        compile 'org.grails:grails-webflow:1.2.1',
+        compile 'org.grails:grails-webflow:1.3.0.M1',
  				'org.springframework.webflow:org.springframework.webflow:2.0.8.RELEASE',
  				'org.springframework.webflow:org.springframework.binding:2.0.8.RELEASE',
  				'org.springframework.webflow:org.springframework.js:2.0.8.RELEASE'
