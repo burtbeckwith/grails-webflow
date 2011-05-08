@@ -6,15 +6,22 @@ grails.project.dependency.resolution = {
     log "warn" // log level of Ivy resolver, either 'error', 'warn', 'info', 'debug' or 'verbose'
 	repositories {
 		grailsHome()
+		grailsCentral()
 	}
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
         compile "org.grails:grails-webflow:${grailsVersion}",
- 				'org.springframework.webflow:org.springframework.webflow:2.0.8.RELEASE',
- 				'org.springframework.webflow:org.springframework.binding:2.0.8.RELEASE',
- 				'org.springframework.webflow:org.springframework.js:2.0.8.RELEASE'
+ 				'org.springframework.webflow:spring-webflow:2.0.8.RELEASE',
+ 				'org.springframework.webflow:spring-binding:2.0.8.RELEASE',
+ 				'org.springframework.webflow:spring-js:2.0.8.RELEASE'
 		runtime 'ognl:ognl:2.7.3'
 
     }
+
+	plugins {
+		build( ":release:1.0.0.M1" ) {
+			export = false
+		}
+	}
 
 }
