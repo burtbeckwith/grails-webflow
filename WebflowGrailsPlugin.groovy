@@ -1,7 +1,7 @@
 import org.codehaus.groovy.grails.webflow.WebFlowPluginSupport
 
 class WebflowGrailsPlugin {
-    def version = "2.0.0.M1"
+    def version = "2.0.0.M2"
     def dependsOn = [core:"1.3 > *",i18n:"1.3 > *", controllers:"1.3 > *"]
     def observe = ['controllers']
     def loadAfter = ['hibernate']
