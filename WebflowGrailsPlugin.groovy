@@ -1,13 +1,13 @@
 import org.codehaus.groovy.grails.webflow.WebFlowPluginSupport
 
 class WebflowGrailsPlugin {
-    def version = "2.0.0.M2"
-    def dependsOn = [core:"1.3 > *",i18n:"1.3 > *", controllers:"1.3 > *"]
+    def version = "2.1.0.BUILD-SNAPSHOT"
+    def dependsOn = [core:"2.1 > *",i18n:"2.1 > *", controllers:"2.1 > *"]
     def observe = ['controllers']
     def loadAfter = ['hibernate']
 
     // the version or versions of Grails the plugin is designed for
-    def grailsVersion = "1.2 > *"
+    def grailsVersion = "2.1 > *"
     // resources that are excluded from plugin packaging
     def pluginExcludes = [
             "grails-app/views/error.gsp"
