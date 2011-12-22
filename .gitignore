@@ -3,3 +3,4 @@ grails-webflow-*.zip
 plugin.xml
 target
 unzipped
+.settings/
