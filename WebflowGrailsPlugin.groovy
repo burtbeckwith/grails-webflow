@@ -1,14 +1,11 @@
 import org.codehaus.groovy.grails.webflow.WebFlowPluginSupport
 
 class WebflowGrailsPlugin {
-    def version = "2.2.0.BUILD-SNAPSHOT"
-    def dependsOn = [core:"2.2 > *",
-                     i18n:"2.2 > *",
-                     controllers:"2.2 > *"]
+    def version = "2.0.8.BUILD-SNAPSHOT"
     def observe = ['controllers']
     def loadAfter = ['hibernate']
 
-    def grailsVersion = "2.2 > *"
+    def grailsVersion = "2.0 > *"
     def author = "Graeme Rocher"
     def authorEmail = "graeme.rocher@springsource.com"
     def title = "Spring Web Flow Plugin"
