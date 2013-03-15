@@ -5,7 +5,7 @@ class WebflowGrailsPlugin {
     def observe = ['controllers']
     def loadAfter = ['hibernate']
 
-    def grailsVersion = "2.0 > *"
+    def grailsVersion = "2.2 > *"
     def author = "Graeme Rocher"
     def authorEmail = "graeme.rocher@springsource.com"
     def title = "Spring Web Flow Plugin"
