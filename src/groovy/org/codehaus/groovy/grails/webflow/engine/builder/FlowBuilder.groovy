@@ -231,7 +231,12 @@ class FlowBuilder extends AbstractFlowBuilder implements GroovyObject, Applicati
         else {
             view = "$viewPath/$flowId/${name}"
         }
-        return view
+        // if viewPath is "/" or ends with "/", or
+        // if flowId is, begins with, or ends with "/", or
+        // if name/path is or begins with "/",
+        // view will have "//" in it which is clearly wrong
+        // and messes up view resolution later on
+        return view.replaceAll(~/\/+/,"/")
     }
 
     private State createViewState(String stateId, String viewName, Transition[] transitions,
