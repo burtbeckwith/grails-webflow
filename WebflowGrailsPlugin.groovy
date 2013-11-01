@@ -1,34 +1,23 @@
 import org.codehaus.groovy.grails.webflow.WebFlowPluginSupport
 
 class WebflowGrailsPlugin {
-    def version = "1.2.1"
-    def dependsOn = [core:"1.2 > *",i18n:"1.2 > *", controllers:"1.2 > *"]
+    def version = "2.0.8.1"
     def observe = ['controllers']
     def loadAfter = ['hibernate']
-
-    // the version or versions of Grails the plugin is designed for
-    def grailsVersion = "1.2 > *"
-    // resources that are excluded from plugin packaging
-    def pluginExcludes = [
-            "grails-app/views/error.gsp"
-    ]
-
+    def grailsVersion = "2.2 > *"
     def author = "Graeme Rocher"
     def authorEmail = "graeme.rocher@springsource.com"
     def title = "Spring Web Flow Plugin"
-    def description = '''\\
-Integrates Spring Web Flow with Grails
-'''
+    def description = 'Integrates Spring Web Flow with Grails'
+    def documentation = "http://grails.org/doc/latest/guide/theWebLayer.html#webflow"
 
-    // URL to the plugin's documentation
-    def documentation = "http://grails.org/plugin/webflow"
+    def license = "APACHE"
+    def organization = [name: 'SpringSource', url: 'http://www.springsource.org/']
+    def issueManagement = [system: 'JIRA', url: 'http://jira.grails.org/browse/GPWEBFLOW']
+    def scm = [url: 'https://github.com/grails-plugins/grails-webflow-plugin']
 
     def doWithSpring = WebFlowPluginSupport.doWithSpring
-
     def doWithDynamicMethods = WebFlowPluginSupport.doWithDynamicMethods
-
     def doWithApplicationContext = WebFlowPluginSupport.doWithApplicationContext
-
     def onChange = WebFlowPluginSupport.onChange
-
 }
